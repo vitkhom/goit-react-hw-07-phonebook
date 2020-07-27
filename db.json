@@ -1,0 +1,19 @@
+{
+  "contacts": [
+    {
+      "name": "Vitalii Khomenko",
+      "number": "+380975156522",
+      "id": 1
+    },
+    {
+      "name": "Maryna Piskorska",
+      "number": "+380990331985",
+      "id": 2
+    },
+    {
+      "name": "Mama",
+      "number": "+380973971781",
+      "id": 3
+    }
+  ]
+}
