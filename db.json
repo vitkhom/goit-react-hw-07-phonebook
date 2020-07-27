@@ -1,18 +1,18 @@
 {
   "contacts": [
     {
-      "name": "Vitalii Khomenko",
-      "number": "+380975156522",
+      "name": "Sara Parker",
+      "number": "+38097-32-45-345",
       "id": 1
     },
     {
-      "name": "Maryna Piskorska",
-      "number": "+380990331985",
+      "name": "Connor Macleod",
+      "number": "+38099-23-56-235",
       "id": 2
     },
     {
-      "name": "Mama",
-      "number": "+380973971781",
+      "name": "Peter Parker",
+      "number": "+38097-67-67-677",
       "id": 3
     }
   ]
