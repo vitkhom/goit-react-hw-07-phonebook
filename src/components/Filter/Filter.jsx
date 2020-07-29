@@ -3,19 +3,21 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import phonebookActions from '../../redux/phonebookActions';
 
-const Filter = ({ value, onFilterChange }) => {
+const Filter = ({ value, items, onFilterChange }) => {
   return (
-    <>
-      <div className="filter">
-        <h3>Find contacts by name</h3>
-        <input
-          type="text"
-          name="filter"
-          value={value}
-          onChange={e => onFilterChange(e.target.value)}
-        />
-      </div>
-    </>
+    items.length >= 2 && (
+      <>
+        <div className="filter">
+          <h3>Find contacts by name</h3>
+          <input
+            type="text"
+            name="filter"
+            value={value}
+            onChange={e => onFilterChange(e.target.value)}
+          />
+        </div>
+      </>
+    )
   );
 };
 
@@ -26,6 +28,7 @@ Filter.propTypes = {
 
 const mapStateToProps = state => ({
   value: state.contacts.filter,
+  items: state.contacts.items,
 });
 
 const mapDispatchToProps = {
